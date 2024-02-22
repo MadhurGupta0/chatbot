@@ -15,7 +15,7 @@ def lottie_url(url):
     return r.json()
 lottie_ff= lottie_url("https://lottie.host/b0e7a727-7511-4b6e-9ab1-75695558e263/uezJK5yfZ0.json")
 with st.sidebar:
-     AI CHATBOT/ COPY CHATBOT ')
+    st.title('AI CHATBOT/ COPY CHATBOT')
     if 'OPENAI_API_KEY' in st.secrets:
         st.success('API key already provided!', icon='✅')
         sa = st.secrets['OPENAI_API_KEY']
